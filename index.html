@@ -1,129 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fullpage.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicholas Root</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-HS66MPV1ZT"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-<div id="fullpage">
+    gtag("config", "G-HS66MPV1ZT");
+  </script>
+  <body>
+    <div class="heading">Nicholas Root</div>
+    <img class="logo" src="images/NR2024Logo2White.svg" />
 
+    <div class="w3-content w3-display-container">
+      <div class="mySlides">
+        <table class="projects">
+          <tbody>
+            <tr class="projectRow">
+              <td
+                class="projectThumbnail"
+                onclick="workCreationPopup.style.display='flex';"
+              >
+                <div
+                  class="workIcon"
+                  onmouseout="picDiv1.className='default2';"
+                  onmouseover="picDiv1.className='selected2';"
+                  onclick="workCreationPopup.className='workPopup';"
+                >
+                  <img
+                    alt="work and creations"
+                    class="default2"
+                    id="picDiv1"
+                    src="images/WorkIconBlack2.svg"
+                  />
+                </div>
+                <h5
+                  style="
+                    font-weight: 500;
+                    filter: drop-shadow(1px 1px 3px rgb(255, 255, 255));
+                  "
+                >
+                  Work & Creations
+                </h5>
+              </td>
 
-    <section class="section s1">
-        <h1>Nicholas Root</h1>
+              <!-- WORK AND CREATIONS -->
+              <div
+                style="display: none"
+                id="workCreationPopup"
+                class="workPopup"
+              >
+                <!-- ACCORDION 1 -->
+                <div class="acc1">
+                  <div class="heading">Creations & Work</div>
+                  <p style="font-weight: 300; margin-bottom: 1px">
+                    Personal Projects
+                  </p>
 
-       <img src="images/RootLogo2020-3.png">
-     
+                  <button class="accordion">+</button>
+                  <div class="panel">
+                    <!-- Sound Pound -->
+                    <div>
+                      <a
+                        class="mobile"
+                        href="https://riggitynick.github.io/sound-pound/"
+                        target="_blank"
+                        ><img
+                          alt="Sound Pound"
+                          class="workLinks"
+                          src="images/soundPound.png"
+                        />
+                      </a>
+                      <p style="margin: 0px; padding: 0px">Sound Pound</p>
+                      <p style="font-weight: 300; margin: 0">
+                        Web based midi pad
+                      </p>
+                    </div>
+                    <!-- AR Dog Parks -->
+                    <div>
+                      <a
+                        class="mobile"
+                        href="https://riggitynick.github.io/AR_dogParks/"
+                        target="_blank"
+                        ><img
+                          alt="AR Dog Parks"
+                          class="workLinks"
+                          src="images/arDogParks.png"
+                        />
+                      </a>
+                      <p style="margin: 0px; padding: 0px">AR Dog Parks</p>
+                      <p style="font-weight: 300; margin: 0">
+                        Augmented reality map
+                      </p>
+                    </div>
+                    <!-- Beer Buddy -->
+                    <div>
+                      <a
+                        class="mobile"
+                        href="https://riggitynick.github.io/beer-buddy/"
+                        target="_blank"
+                        ><img
+                          alt="Beer Buddy"
+                          class="workLinks"
+                          src="images/beerBuddy.png"
+                        />
+                      </a>
+                      <p style="margin: 0px; padding: 0px">Beer Buddy</p>
+                      <p style="font-weight: 300; margin: 0">
+                        Beer style library
+                      </p>
+                    </div>
+                    <!-- Shape Click -->
+                    <div>
+                      <a
+                        class="mobile"
+                        href="https://riggitynick.github.io/shapeClick/"
+                        target="_blank"
+                        ><img
+                          alt="Shape Click"
+                          class="workLinks"
+                          src="images/shapeClick.png"
+                        />
+                      </a>
+                      <p style="margin: 0px; padding: 0px">AR Shape Click</p>
+                      <p style="font-weight: 300; margin: 0">
+                        Game: click the shapes
+                      </p>
+                    </div>
+                  </div>
 
-        <h2>An Ambitious developer with a passion<br> for clean design, functionality & optimization, <br>with the desire to keep learning as a creative professional.</h2>
-    </section>
+                  <!-- ACCORDION 2 -->
 
+                  <p style="font-weight: 300; margin-bottom: 1px">
+                    Websites I've Managed
+                  </p>
+                  <button class="accordion">+</button>
+                  <div class="panel">
+                    <ul style="text-align: left; font-weight: 300">
+                      <p style="font-weight: 500">Websites</p>
+                      <li style="margin: 10px">
+                        <a
+                          href="https://www.mountain.commonspirit.org/"
+                          target="_blank"
+                          >CommonSpirit Mountain Region(formerly Centura
+                          Health)</a
+                        >
+                      </li>
+                      <li style="margin: 10px">
+                        <a href="https://www.dps.nm.gov/" target="_blank"
+                          >New Mexico Department of Public Safety</a
+                        >
+                      </li>
+                      <li style="margin: 10px">
+                        <a
+                          href="https://medschool.cuanschutz.edu/medical-oncology"
+                          target="_blank"
+                          >University of Colorado - Division of Medical
+                          Oncology</a
+                        >
+                      </li>
+                      <li style="margin: 10px">
+                        <a
+                          href="https://www.atonementlakewood.org/"
+                          target="_blank"
+                          >Atonement Lutheran Church</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
+                <div
+                  class="closeIcon"
+                  onclick="workCreationPopup.style.display='none';"
+                >
+                  <img src="images/closeIcon.svg" />
+                  <p style="margin-top: 0">close</p>
+                </div>
+              </div>
 
-    <section class="section s1">
-        <h1>Work Examples</h1>
+              <!-- CONTACT INFO -->
 
-        <!-- Slideshow with navigation: -->
-      
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
+              <td
+                class="projectThumbnail"
+                onclick="contactInfoPopup.style.display='flex';"
+              >
+                <!-- <td class="projectThumbnail" > -->
+                <div
+                  class="workIcon"
+                  onmouseout="picDiv1.className='default2';"
+                  onmouseover="picDiv1.className='selected2';"
+                  onclick="contactInfoPopup.className='contactPopup';"
+                >
+                  <!-- <p><a class="mobile" href="#div1"><img alt="Photo of caregiver and patients" class="default2" id="picDiv1" src="WorkIconBlack.svg" /></a></p> -->
+                  <img
+                    alt="Contact Icon"
+                    class="default2"
+                    id="picDiv1"
+                    src="images/contactIcon.svg"
+                  />
+                </div>
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext" style="color:black;"><strong>1 / 4</strong></div>
-          <a href="https://riggitynick.github.io/AR_dogParks/" target="blank">
-          <img src="./images/ARDogParkMaps2.PNG" style="width:100%">
-        </a>
-        <div class="text" style="text-shadow:none; color:black;"><a href="https://riggitynick.github.io/AR_dogParks/" target="blank" style="color:black; font-family: 'Sansita Swashed', cursive;">Click here to visit AR Dog Parks!</a>
-            <br><br>A website where you can browse different dog parks,<br>see their reviews, amenities, maps and other feaures</div>
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
-          <img src="./images/soundPound10-1.PNG" style="width:100%">
-          <div class="text"><a href="http://sound-pound.herokuapp.com/" target="blank">Click here to try sound#</a> <br><br>a web-based drum pad, <br>with Pitch, Speed, and <br>Volume controls for 6 differnt Loops</div>
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <img src="./images/shapeClickPic2.PNG" style="width:100%">
-          <div class="text"><a href="https://riggitynick.github.io/shapeClick/" target="blank">Click here to play shapeClick!</a> <br><br>A gyroscopic AR game <br>
-            Click the center of the<br> shapes to earn points. <br>Reach 20 points to win</div>
-        </div>
+                <h5
+                  style="
+                    font-weight: 500;
+                    filter: drop-shadow(1px 1px 3px rgb(255, 255, 255));
+                  "
+                >
+                  Contact & About
+                </h5>
+              </td>
 
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 4</div>
-            <img src="./images/BeerBuddySnip3.PNG" style="width:100%; border: 2 px solid black;">
-            <div class="text" style="text-shadow:none; color:black;"><a href="https://riggitynick.github.io/beer-buddy/" target="blank" style="color:black;">Click here to use BeerBuddy!!</a> <br><br>The searchable beer style list.<br>
-                Search by beer style (e.g Irish stout), for in depth <br>information, such as it's description,<br>reccomended food pairings, IBUs and ABV.</div>
-          </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <div
+                style="display: none"
+                id="contactInfoPopup"
+                class="contactPopup"
+              >
+                <div class="acc1">
+                  <div class="heading">Contact & About</div>
+
+                  <div class="skills" style="text-align: left">
+                    <h3>Languages & Frameworks</h3>
+                    <p>CSS</p>
+                    <p>HTML</p>
+                    <p>JavaScript</p>
+                    <p>AJAX & jQuery</p>
+                    <p>Python & Django</p>
+                    <p>WordPress</p>
+                    <p>SharePoint</p>
+
+                    <h3>Hard Skills</h3>
+                    <p>Photography</p>
+                    <p>Sound Editing & Design</p>
+                    <p>3D Modeling</p>
+                    <p>Adobe Creative Suite</p>
+
+                    <h3>Soft Skills</h3>
+                    <p>Adapts & learns quickly</p>
+                    <p>Communication</p>
+                    <p>Tenacious & ambitious</p>
+                    <p>Time management</p>
+                    <p>Critical & creative mindset</p>
+                  </div>
+
+                  <div class="profiles">
+                    <h5 style="margin-top: 2vw">External links</h5>
+                    <p style="margin-top: 40px">
+                      <a href="https://github.com/riggitynick" target="_blank"
+                        >GitHub</a
+                      >
+                    </p>
+
+                    <p style="margin-top: 80px">
+                      <a
+                        href="https://www.behance.net/nicholasroot21"
+                        target="_blank"
+                        >Behance</a
+                      >
+                    </p>
+
+                    <p style="margin-top: 80px">
+                      <a href="mailto:riggitynick@gmail.com" target="_blank"
+                        >Email me</a
+                      >
+                    </p>
+                  </div>
+
+                  <div class="about" style="text-align: left">
+                    <h3>Who I am</h3>
+                    <p>
+                      An ambitious creator with a passion for clean design,
+                      functionality &<br />
+                      optimization, with the desire to keep growing as a
+                      creative professional.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="closeIcon"
+                  onclick="contactInfoPopup.style.display='none';"
+                >
+                  <img src="images/closeIcon.svg" />
+                  <p style="margin-top: 0">close</p>
+                </div>
+              </div>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-    </section>
-
-
-    <section class="section s2">
-        <h1>External Links</h1>
-        <div class="description">
-            <h3>Languages &<br>frameworks</h3>
-            <p>CSS<br>
-                HTML<br>
-                JavaScript<br>
-                AJAX/jQuery<br>
-                Python/Django<br>
-                WordPress<br>
-                SharePoint<br><br></p>
-            
-            <h3>Hard Skills</h3>
-            <p>Photography<br>
-                Sound Editing & Design<br>
-                3D Modeling<br>
-                Adobe Creative Suite<br><br></p>
-
-                <h3>Soft Skills</h3>
-            <p>Adapts/learns quickly<br>
-                Communication<br>
-                Tenacious/Ambitious<br>
-                Time management<br>
-                Critical/Creative Mindset<br>
-            </p>
-        </div>
-
-
-  <div class="hat">
-    <h2><a href="https://github.com/riggitynick" target = "blank">GitHub</a></h2>
-</div>   
-<div class="hat">
-    <h2><a href="https://www.behance.net/nicholasroot21" target = "blank">Behance</a></h2>
-</div> 
-<div class="hat">
-    <h2><a href="mailto:riggitynick@gmail.com">Email me</a></h2>
-</div> 
-
-    </section>
-
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-<script src="./fullpage.min.js"></script>
-
-<script src="app.js"></script>
-<script src="script.js"></script>
-
-
-</body>
+    </div>
+  </body>
 </html>
-

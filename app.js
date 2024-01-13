@@ -1,40 +1,22 @@
-new fullpage('#fullpage', {
-    autoScrolling: true,
-    navigation: true,
-    onLeave: (origin,destination,direction) =>{
-        const section = destination.item;
-        const title = section.querySelector('h1');
-        const tl = new TimelineMax({delay: 1.5});
-        tl.fromTo(title,1.5, {y: '50', opacity:0}, {y:0, opacity: 1});
-        
-        if(destination.index === 1) {
-            const hats = document.querySelectorAll('.hat');
-            const description = document.querySelector('.description');
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-         
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+    this.innerHTML= "-";
 
-           tl.fromTo(description, 2, {y: "50", opacity:0}, {y:0, opacity:1})
-
-           
-           
-            .fromTo(hats[0], 1, {x: '900%', y:'-55%'}, {x: '-40%'})  
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "flex") {
         
-            .fromTo(hats[1], 1, {x: '900%', y:'-18%'}, {x: '-40%'})  
-          
-            .fromTo(hats[2], 1, {x: '900%', y: '20%'}, {x: '-40%'});
-        
-            
-        }
-   
+      panel.style.display = "none";
+      this.innerHTML= "+";
+    } else {
+      panel.style.display = "flex";
+      panel.style.justifyContent = "space-evenly";
     }
-});
-
-/////////////////////
-
-
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+  });
+}
