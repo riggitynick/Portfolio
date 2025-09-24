@@ -6,14 +6,14 @@ for (i = 0; i < acc.length; i++) {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active");
-    this.innerHTML= "-";
+    this.innerHTML= "- Click to Close";
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.display === "flex") {
         
       panel.style.display = "none";
-      this.innerHTML= "+";
+      this.innerHTML= "+ Project Details";
     } else {
       panel.style.display = "flex";
       panel.style.justifyContent = "space-evenly";
