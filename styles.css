@@ -31,7 +31,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    width:28vw;
+    width:22vw;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.51));
     animation: fadeIn 4s;
 }
@@ -370,7 +370,7 @@ h6{
 .acc1 .heading{
     color: black;
     font-size: 3vw;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     }
     
  .st0 {
@@ -381,6 +381,7 @@ h6{
     font-style: italic; 
     font-size: 1.7vw;
     margin-top: 15px;
+    margin-bottom: 0;
     filter: drop-shadow(1px 1px 3px rgb(255, 255, 255));
                   
 }
@@ -463,13 +464,13 @@ h6{
  }
 
  .projectImageSoundpound{
-     background-image: url("images/soundpoundsquare.png");
+     background-image: url("/images/soundpoundsquare.png");
     background-repeat: no-repeat;
     /* background-size: contain; */
     background-size: cover;
 
     width: 20vw;
-    height: 20vw;
+    height: 10vw;
     border-radius: 10px;
     opacity: 0.7;
       color: white;       
@@ -480,12 +481,30 @@ h6{
 
  }
 
+.projectImageKaleidoscopicVisualizer{
+    background-image: url("/images/kscopesquare.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+
+    width: 20vw;
+    height: 10vw;
+    border-radius: 10px;
+    opacity: 0.7;
+      color: white;       
+      font-size:30px;
+       -webkit-text-stroke-width: 1px; /* Sets the thickness of the stroke */
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+            filter: grayscale(50%);
+}
+
+
  .projectImageBreathVisualizer{
-     background-image: url("images/breathvisualizersquare.png");
+     background-image: url("/images/breathvisualizersquare.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20vw;
-    height: 20vw;
+    height: 10vw;
     border-radius: 10px;
     opacity: 0.7;
       color: white;       
@@ -497,11 +516,11 @@ h6{
  }
 
  .projectImageARDogParks{
-     background-image: url("images/ardogparkssquare.png");
+     background-image: url("/images/ardogparkssquare.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20vw;
-    height: 20vw;
+    height: 10vw;
     border-radius: 10px;
     opacity: 0.7;
       color: rgb(0, 0, 0);       
@@ -513,11 +532,11 @@ h6{
  }
 
  .projectImageBeerbuddy{
-     background-image: url("images/beerbuddysquare.png");
+     background-image: url("/images/beerbuddysquare.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20vw;
-    height: 20vw;
+    height: 10vw;
     border-radius: 10px;
     opacity: 0.7;
       color: rgb(0, 0, 0);       
@@ -538,14 +557,14 @@ h6{
   
  }
 
- .projectImageSoundpound:hover , .projectImageBeerbuddy:hover, .projectImageARDogParks:hover, .projectImageBreathVisualizer:hover{
+ .projectImageSoundpound:hover , .projectImageBeerbuddy:hover, .projectImageARDogParks:hover, .projectImageBreathVisualizer:hover, .projectImageKaleidoscopicVisualizer:hover{
         transition: 0.4s;
     opacity: 1;
     filter: grayscale(0%);
     /* color: white; */
  }
 
-.projectImageSoundpound p, .projectImageBeerbuddy p, .projectImageARDogParks p, .projectImageBreathVisualizer p{
+.projectImageSoundpound p, .projectImageBeerbuddy p, .projectImageARDogParks p, .projectImageBreathVisualizer p, .projectImageKaleidoscopicVisualizer p{
    padding-top: 80px;
  }
  
@@ -642,21 +661,23 @@ h6{
   @media only screen and (max-width: 840px) {
 
      .accordion {
-width: 40vw;
+width: 60vw;
 height: fit-content;
  }
  .panel{
-  width: 33vw;
+  width: 60vw;
  }
 
  .webWorkContainer{
   display: unset;
  }
 
- div.projectImageSoundpound, .projectImageARDogParks, .projectImageBeerbuddy, .projectImageBreathVisualizer{
-
-  min-width: 40vw;
+ div.projectImageSoundpound, .projectImageARDogParks, .projectImageBeerbuddy, .projectImageBreathVisualizer, .projectImageKaleidoscopicVisualizer{
+min-height:150px;
+  min-width: 60vw;
+  font-size: 22px;
  }
+ 
 
   }
 
@@ -683,13 +704,20 @@ height: fit-content;
     .heading {
         font-size: 8vw; 
     }
-    .profiles{
+    .about{
+      margin-top:30px;
+    }
+    .profiles, h6{
         font-size: 7vw; 
+        padding-left:15px;
+    }
+    .webWork p {
+      margin:0;
     }
     .workLinks{
     max-width:20vw; 
     }
-    .projectImageSoundpound p, .projectImageBeerbuddy p, .projectImageARDogParks p, .projectImageBreathVisualizer p{
+    .projectImageSoundpound p, .projectImageBeerbuddy p, .projectImageARDogParks p, .projectImageBreathVisualizer p, .projectImageKaleidoscopicVisualizer p{
    padding-top: 10px;
  }
 
@@ -714,6 +742,9 @@ height: fit-content;
 .menuText{
     font-size: large;
 }
+.accordion {
+width: 60vw;
+ }
     
   }
 
@@ -784,7 +815,7 @@ h6{
     width: 40vw;
     height: auto;
     }
- .projectImageSoundpound, .projectImageARDogParks, .projectImageBeerbuddy, .projectImageBreathVisualizer{
+ .projectImageSoundpound, .projectImageARDogParks, .projectImageBeerbuddy, .projectImageBreathVisualizer, .projectImageKaleidoscopicVisualizer{
   
     width: 50vw;
     height: auto;
@@ -798,9 +829,7 @@ h6{
   -webkit-text-stroke-color: rgb(255, 255, 255);
       text-shadow: 2px 3px black;
  }
- .accordion {
-width: 50vw;
- }
+ 
  .panel{
     width: 40vw;
  }
@@ -808,4 +837,3 @@ width: 50vw;
 
 
   }
-
