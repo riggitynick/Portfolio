@@ -464,7 +464,7 @@ h6{
  }
 
  .projectImageSoundpound{
-     background-image: url("/images/soundpoundsquare.png");
+     background-image: url("images/soundpoundsquare.png");
     background-repeat: no-repeat;
     /* background-size: contain; */
     background-size: cover;
@@ -837,3 +837,4 @@ h6{
 
 
   }
+
