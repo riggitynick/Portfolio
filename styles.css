@@ -482,7 +482,7 @@ h6{
  }
 
 .projectImageKaleidoscopicVisualizer{
-    background-image: url("/images/kscopesquare.png");
+    background-image: url("images/kscopesquare.png");
     background-repeat: no-repeat;
     /* background-size: contain; */
     background-size: cover;
@@ -500,7 +500,7 @@ h6{
 
 
  .projectImageBreathVisualizer{
-     background-image: url("/images/breathvisualizersquare.png");
+     background-image: url("images/breathvisualizersquare.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20vw;
@@ -516,7 +516,7 @@ h6{
  }
 
  .projectImageARDogParks{
-     background-image: url("/images/ardogparkssquare.png");
+     background-image: url("images/ardogparkssquare.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20vw;
@@ -532,7 +532,7 @@ h6{
  }
 
  .projectImageBeerbuddy{
-     background-image: url("/images/beerbuddysquare.png");
+     background-image: url("images/beerbuddysquare.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20vw;
@@ -837,4 +837,5 @@ h6{
 
 
   }
+
 
