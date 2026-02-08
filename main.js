@@ -20,3 +20,18 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+document.addEventListener('keydown', (event) => {
+    // Check if the key is NOT the Tab key (keyCode 9 or event.code "Tab")
+    if (event.code === "Tab" || event.keyCode === 9) {
+        // Optional: you can add a console log or other action here if needed
+        console.log("Tab key pressed and ignored by this specific logic.");
+        return; // Exit the function, effectively ignoring the tab key for your custom logic
+    }
+
+    // Place the rest of your onkeydown logic here
+    console.log("A non-tab key was pressed. Key code: " + event.keyCode);
+    // ... your other function calls or code ...
+});
+
